@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>song player</title>
+    <style>
+        @media(max-width:375px) {
+    body{
+        height: min-content;
+        width: min-content;
+    }
+}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(12, 12, 12);
+            font-size: 30px;
+        }
+
+        div {
+            padding: 30px;
+            margin: 30px;
+            background-color: blue;
+            border-radius: 30px;
+            width: 270px;
+            /* text-align: center; */
+            background-image: url(cover.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        button {
+            margin: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            position: relative;
+            border-color: whitesmoke;
+        }
+
+        button:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            box-shadow: 8px 8px 8px green;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Songs</h1>
+    </div>
+    <ul>
+        <li>
+            <button onclick="Happier ()">
+                Happier by marshmello
+            </button>
+        </li>
+        <li>
+            <button onclick="perfect()">
+                Perfect by ed sheeran
+            </button>
+        </li>
+        <li>
+            <button onclick="onelove ()">
+                One love by shubh
+            </button>
+        </li>
+        <li>
+            <button onclick="Russian ()">
+                Russian bandana by dhanda nyoliwala
+            </button>
+        </li>
+        <li>
+            <button onclick="chaldiye ()">
+                Chal diye tum kahan by aur
+            </button>
+        </li>
+        <li>
+            <button onclick="tyuhaikahan ()">
+                Tu hai kahan by aur
+            </button>
+        </li>
+    </ul>
+</body>
+<script>
+    function Happier() {
+        window.location.href = "happier.html"
+    }
+    function perfect() {
+        window.location.href = "perfect.html"
+    }
+    function onelove() {
+        window.location.href = "onelove.html"
+    }
+    function Russian() {
+        window.location.href = "russianbandana.html"
+    }
+    function chaldiye() {
+        window.location.href = "chaldiye.html"
+    }
+    function tyuhaikahan() {
+        window.location.href = "tuhaikahan.html"
+    }
+</script>
+
+</html>

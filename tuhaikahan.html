@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(max-width:375px) {
+    body{
+        height: min-content;
+        width: min-content;
+    }
+}
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            background-color: black;
+            color: aliceblue;
+        }
+        div{
+          display:inline-block;
+         background-color:  rgba(65, 63, 63, 0.233);
+         padding: 20px;
+         border-radius: 20px;
+            }
+            img{
+                height: 350px;
+                width: 500px;
+                border-radius: 25px;
+            }
+            h5{
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+                padding-left: 30px;
+                font-size: 15px;
+
+            }
+            p{
+                padding: 0;
+                margin: 0;
+                padding-left: 30px;
+                margin-bottom: 20px;
+            }
+            button{
+                /* padding-top: 10px;
+                padding-right: 50px; */
+                text-align: center;
+                font-size: x-large;
+                display: inline;
+                color: wheat;
+                background-color: rgba(65, 63, 63, 0.233);
+                border-radius: 10px;
+            }
+            button:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        button:active{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="download (5).jpeg" alt="dhd">
+    <h5>
+        Song title - Tu hai kahan
+    </h5>
+    <p>
+        Artist  - Aur
+    </p>
+    <button onclick="home ()">
+        Home🏠
+    </button>
+    <audio controls>
+        <source src="AUR - TU HAI KAHAN - Raffey - Usama - Ahad (Official Music Video) [AX6OrbgS8lI].mp3">
+    </audio>
+    <button>
+        Next➡️
+    </button>
+    </div>
+</body>
+<script>
+       function home () {
+        window.location.href = "index.html"
+    }
+</script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Bandana</title>
+    <style>
+        @media(max-width:375px) {
+    body{
+        height: min-content;
+        width: min-content;
+    }
+}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        div {
+            display: inline-block;
+            background-color: rgba(65, 63, 63, 0.233);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        img {
+            height: 350px;
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        h5 {
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            padding-left: 30px;
+            font-size: 15px;
+
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            /* padding-top: 10px;
+                padding-right: 50px; */
+            text-align: center;
+            font-size: x-large;
+            display: inline;
+            color: wheat;
+            background-color: rgba(65, 63, 63, 0.233);
+            border-radius: 10px;
+        }
+        button:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        button:active{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="download (3).jpeg">
+    <h5>
+        Song title - Russian Bandana
+    </h5>
+    <p>
+        Artist - Dhanda Nyoliwala
+    </p>
+    <button onclick="home ()">
+        Home🏠
+    </button>
+    <audio controls>
+        <source
+            src="Dhanda Nyoliwala - Russian Bandana (Music Video) _ Deepesh Goyal _ VYRL Haryanvi [1OAjeECW90E].mp3">
+    </audio>
+    <button onclick="chaldiye()">
+        Next➡️
+    </button>
+    </div>
+</body>
+<script>
+      function home () {
+        window.location.href = "index.html"
+    }
+     function chaldiye() {
+        window.location.href = "chaldiye.html"
+    }
+</script>
+
+</html>
